@@ -1,0 +1,186 @@
+<html>
+
+<head>
+  <title>New Project</title>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Someone" />
+  <meta name="description" content="Something" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Movies" />
+
+  <!-- Page icon Link -->
+  <link rel="icon" href="images/logo.png" />
+
+  <!-- Font Family Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+  <!-- Fontawesome Link -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Bootstrap Link -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- Page Style Link -->
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+
+
+
+  <!-- Nav section -->
+  <section class="nav-section">
+    <div id="nav-menu" class="nav-menu">
+      <div class="nav-item">
+        <ul>
+
+          <li id="item1"><a class="nav-category" href="#">Now playing</a></li>
+          <li id="item2"><a class="nav-category" href="#">Popular</a></li>
+          <li id="item3"><a class="nav-category" href="#">Top Rated</a></li>
+
+          <li id="item4"><a class="nav-category" href="#">Trending</a></li>
+          <li id="item5"><a class="nav-category" href="#">Upcoming</a></li>
+          <li id="item6"><a class="nav-category" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="nav-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fas fa-globe"></i></a>
+
+        <div class="pt-3">
+          <span>Copyright Â© 2019 All Rights Reserved.</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="mark-nav">
+
+      <div class="mark-logo">
+        <img src="images/logo.png">
+      </div>
+      <div id="mark-togg" class="mark-togg">
+        <i id="togg-ico" class="fa fa-align-justify"></i>
+
+      </div>
+
+      <div class="mark-socials">
+        <div class="mark-lang">
+          <span>
+            <i class="fas fa-globe"></i>
+          </span>
+        </div>
+
+        <div class="mark-share">
+          <span>
+            <i class="fas fa-share-alt"></i>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- search section -->
+  <div class="search container-fluid">
+
+    <input id="seasea" type="text" placeholder="get movies by word..">
+    <input id="input" type="text" placeholder="search...">
+
+  </div>
+
+  <!-- display -->
+
+  <section class="results container-fluid ">
+    <div class="container pt-2 ">
+      <div id="cardz" class=" row g-4 ">
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="container w-75 mx-auto my-5 ">
+
+    <h2 class="text-light my-5">ContacUs...</h2>
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <input class="form-control" id="name" placeholder="Enter Your Name">
+          <div class="alert alert-danger" id="namealert" role="alert">
+            Your Name is not valid
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <input class="form-control" id="email" placeholder="Enter Email">
+          <div class="alert alert-danger" id="emailalert" role="alert">
+            enter valid email
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <input class="form-control" id="phone" placeholder="Enter phone">
+          <div class="alert alert-danger" id="phonealert" role="alert">
+            enter valid phone
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <input class="form-control" id="age" placeholder="Enter Age">
+          <div class="alert alert-danger" id="agealert" role="alert">
+            enter valid Age
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <input class="form-control" type="password" id="password" placeholder="Enter Password">
+          <div class="alert alert-danger" id="passwordalert" role="alert">
+            enter valid password *Minimum eight characters, at least one letter and one number:*
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <input class="form-control" type="password" id="rePassword" placeholder="Enter RePassword">
+          <div class="alert alert-danger" id="repasswordalert" role="alert">
+            enter valid Repassword
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <button type="submit" disabled id="submitBtn" class="btn btn-outline-danger">Submit</button>
+
+  </section>
+
+  </section>
+
+  <!-- JQuery Link -->
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <!-- Popper Link -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap Link -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Page Main Script Link -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
