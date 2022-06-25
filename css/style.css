@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-section {
+    display: flex;
+    z-index: 5555;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.mark-nav {
+    width: 60px;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #f8f6f6;
+}
+
+.mark-togg {
+    font-size: 25px;
+}
+
+.mark-logo img {
+    height: 48px;
+}
+
+.mark-lang,
+.mark-share {
+    padding: 5px 0;
+}
+
+.nav-menu {
+    width: 0px;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000;
+    transition: all 0.6s ease;
+}
+
+.nav-item li {
+    padding-top: 25px;
+}
+
+.nav-item li a {
+    color: #f9f6f6;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.6s ease;
+}
+
+.nav-item li a:hover {
+    color: #b92828;
+    text-decoration: none;
+}
+
+.nav-social {
+    text-align: center;
+}
+
+
+/* ----------------------content------------------ */
+
+.search {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.search input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 0;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+input:focus {
+
+    border-color: #15202cb7;
+    box-shadow: 0 0 10px #15202cb7;
+}
+
+/* display */
+
+.results .container {
+    margin-left: 4rem;
+}
+
+.img {
+    overflow: hidden;
+    position: relative;
+}
+
+.info {
+    background-color: rgba(216, 201, 201, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateY(340px);
+    transition: all 1s;
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+
+.info p {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: small;
+}
+
+.movie:hover .info {
+    opacity: 0.9;
+    transform: translateY(0px);
+}
+
+/* contact */
+
+.form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 0;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    color: #fff;
+    border-color: #3b5a7cb7;
+    box-shadow: 0 0 10px #1f3042b7;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.alert {
+    display: none;
+}
